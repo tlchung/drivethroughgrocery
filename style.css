@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.center {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  color: #99FFBB
+}
+
+h2 {
+  font-weight: bold;
+  color: #99FFBB
+}
+
+p {
+  font-weight: bold;
+  color: #99FFBB
+}
+
+body {background-color: #485563;}
+
+/*Navigation*/
+
+.navigation {
+  width: 100%;
+  height: 80px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav-container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+}
+
+.nav-container .links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.nav-container .logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container .links a,
+.nav-container .logo a {
+  text-decoration: none;
+  transition: var(--transition-fast);
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container .links a {
+  font-size: var(--font-medium);
+}
+
+.nav-container .logo p {
+  font-size: var(--font-large);
+}
+
+.nav-container .links a:hover,
+.nav-container .logo p:hover {
+  font-size: var(--font-large);
+}
+
+.mobile-button {
+  display: none;
+}
+
+.mobile-links {
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: var(--transition-fast);
+  padding-top: 20px;
+}
+
+.mobile-links a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  color: rgb(153, 255, 187);
+}
+
+.mobile-links .closebtn {
+  font-size: var(--font-2x-large);
+  color: rgb(153, 255, 187);
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 5px solid rgb(153, 255, 187);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
